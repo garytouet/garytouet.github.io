@@ -32,27 +32,25 @@ text-decoration: none;
 -webkit-transition: color 0.50s ease-in;
 -moz-transition: color 0.50s ease-in;
 transition: color 0.50s ease-in;
+color: #0063dc;
+border-bottom: solid 1px #d9d9d9;
 }
-
-/*Linked Titles + content links*/
-.link-post_title a, .post_content a, #pagination a, a {
-	color: #0063dc;
-}
-.link-post_title a:hover, .post_content a:hover, #pagination a:hover, a:hover  {
+a:hover {
 	color: #000;
 }
-.post_content a, .post_content a:hover, a, a:hover {
- border-bottom: solid 1px #d9d9d9;
+
+/*Remove border for these links*/
+.link-post_title a, #pagination a, .menu a, .standard-post_title a, .info a, .archive_item a, .spade, #blog-title a {
+	border: none;
 }
 
-/*Menu + Standard titles + footer links */
-.menu li a, .standard-post_title a, .info li a, .archive_permalink {
+/*Menu + Standard titles + footer links + Archive items */
+.menu li a, .standard-post_title a, .info li a, .archive_item a {
 	color: #000;
-	border: none;
 }
-.menu li a:hover, .standard-post_title a:hover, .info li a:hover, .archive_permalink:hover  {
+.menu li a:hover, .standard-post_title a:hover, .info li a:hover, .archive_item a:hover, .spade:hover  {
 	color: #0063dc;
-	border: none;
+
 }
 
 /*Spades*/
@@ -62,11 +60,7 @@ transition: color 0.50s ease-in;
   margin-top: 5px;
 	color: #d9d9d9;
 }
-.spade:hover {
-	color: #0063dc;
-}
-
-/*End: Menu + Standard titles + footer links*/
+/*End: Link Types*/
 
 /* Min and max width for the media */
 img {
@@ -107,9 +101,6 @@ h3 {
 }
 .post-date {
 	color: #d9d9d9;
-}
-#blog-title a {
-	border:none;
 }
 
 /* Footer */

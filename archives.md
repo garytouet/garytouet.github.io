@@ -66,5 +66,6 @@ permalink: /archives/
 
 <h2>Available RSS feed</h2>
 
-<a class="archive_permalink" href="{{ site.url }}/feed.xml" alt="Full content Atom feed">Atom feed</a>
+<a href="{{ site.url }}/feed.xml" alt="Full content Atom feed">Atom feed</a>
+
 </section>
