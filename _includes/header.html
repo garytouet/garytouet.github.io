@@ -16,11 +16,11 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{site.url}}{{page.url}}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
     {% feed_meta %}
 
-    <!-- <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed/" title="Gary Touet latest posts">
-    -->
+    <link rel="alternate" type="application/atom+xml" href="{{ "feed.xml" | relative_url}}" title="Gary Touet latest posts">
+
 
     {% if jekyll.environment == "production" %}
       <script type="text/javascript">
