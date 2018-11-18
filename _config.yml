@@ -17,7 +17,7 @@ title: Gary Touet
 email: hello@garytouet.com
 description: Simple notes
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://garytouet.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: garytouet
 github_username:  garytouet
 permalink: /:year/:month/:title/
