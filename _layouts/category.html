@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h2>Archive for the "{{ page.category }}" category:</h2>
+
+<ul>
+{% for post in site.categories[page.category] %}
+ <li>
+  <a href="{{ post.url }}" title="Permanent Link to {{ post.title }}">{{ post.title }}</a>
+  <span class="archive_entry-date">{{ post.date | date: site.date_format }}</span>
+ </li>{% endfor %}
+</ul>

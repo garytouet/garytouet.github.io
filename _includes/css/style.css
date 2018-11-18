@@ -1,0 +1,246 @@
+/* Structure */
+body {
+font-family: "PT Serif", Georgia, serif;
+color: #000000;
+font-size: 0.8em;
+line-height: 1.7em;
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.skip-link {
+position: absolute;
+left: -9999px;
+}
+
+#page {
+	padding: 30px 0 30px 0;
+}
+.post {
+padding-top: 40px;
+padding-bottom: 30px;
+border-bottom: solid 1px #d9d9d9;
+}
+.post:last-child {
+	border: none;
+}
+
+/*Link types:*/
+a {
+text-decoration: none;
+-webkit-transition: color 0.50s ease-in;
+-moz-transition: color 0.50s ease-in;
+transition: color 0.50s ease-in;
+}
+
+/*Linked Titles + content links*/
+.link-post_title a, .post_content a, #pagination a, a {
+	color: #0063dc;
+}
+.link-post_title a:hover, .post_content a:hover, #pagination a:hover, a:hover  {
+	color: #000;
+}
+.post_content a, .post_content a:hover, a, a:hover {
+ border-bottom: solid 1px #d9d9d9;
+}
+
+/*Menu + Standard titles + footer links */
+.menu li a, .standard-post_title a, .info li a, .archive_permalink {
+	color: #000;
+	border: none;
+}
+.menu li a:hover, .standard-post_title a:hover, .info li a:hover, .archive_permalink:hover  {
+	color: #0063dc;
+	border: none;
+}
+
+/*Spades*/
+.spade {
+	font-size: 1.2em;
+  float: right;
+  margin-top: 5px;
+	color: #d9d9d9;
+}
+.spade:hover {
+	color: #0063dc;
+}
+
+/*End: Menu + Standard titles + footer links*/
+
+/* Min and max width for the media */
+img {
+	max-width:100%;
+	border:0;
+	height: auto;
+}
+
+video,object,iframe {
+	max-width:100%;
+	border:0;
+	display: block;
+	max-height: 250px;
+}
+
+/*Titles, Fonts*/
+h1, h2, h3, #blog-title, .post-date, #pagination a, .archive_permalink, .archive_post-date {
+ font-family: "PT Sans", "Helvetica Neue", sans-serif;
+}
+h1, h2 {
+ font-size: 1.2em;
+ margin: 10px 0 20px 0;
+}
+h3 {
+ font-size: 1.1em;
+ margin: 20px 0 20px 0;
+}
+
+/* Website Title */
+#blog-description {
+	display: inline;
+}
+#blog-title, #blog-title a:visited {
+	font-weight: bold;
+	display: inline;
+	font-size: 2.3em;
+	color: #000000;
+}
+.post-date {
+	color: #d9d9d9;
+}
+#blog-title a {
+	border:none;
+}
+
+/* Footer */
+#footer {
+ border-top: 1px solid #d9d9d9;
+ clear: both;
+}
+.info {
+ list-style: none;
+ margin: 20px 0 20px 0;
+ text-align: center;
+}
+.info li{
+ font-size: 0.85em;
+ display: inline-table;
+ margin-left: 6%;
+}
+.info li:first-child {
+ margin: 0;
+}
+@-moz-document url-prefix() {
+   #search {
+       margin-top: -20px;
+   }
+}
+
+/* Navigation */
+#pagination {
+ padding: 30px 0 30px 0;
+ /*border-top: 1px solid #d9d9d9;*/
+}
+#pagination span{
+	display: inline-block;
+ font-weight: bold;
+}
+.next {
+ float: right;
+}
+
+/* Search box */
+input[type=text] {
+border: 1px solid #d9d9d9;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+-webkit-transition: all 0.1s linear;
+-moz-transition: all 0.1s linear;
+-o-transition: all 0.1s linear;
+transition: all 0.1s linear;
+color: #000;
+}
+input[type=text]:hover {
+border-color: #bbbbbb;
+}
+input[type=text]:focus {
+border-color: #0063dc;
+-webkit-box-shadow: #0063dc 0 0 3px;
+-moz-box-shadow: #0063dc 0 0 3px;
+-o-box-shadow: #0063dc 0 0 3px;
+box-shadow: #0063dc 0 0 3px;
+}
+
+/* Archives Page */
+.archive_section {
+ margin: 40px 0 20px 0;
+}
+.archive_item {
+ border-bottom: solid 1px #d9d9d9;
+ margin: 10px 0 0 -10px;
+ padding-bottom: 10px;
+ list-style: none;
+}
+.archive_permalink {
+ width: 380px;
+ display: inline-block;
+
+}
+.archive_post-date {
+ font: 12px;
+ color: #d9d9d9;
+ margin-top: 5px;
+ float: right;
+ width: 60px;
+}
+
+
+/* Layout */
+
+/*@media (max-width: 600px) {*/
+  #wrapper {
+  	width: 80%;
+  	max-width: 450px;
+  	margin: 0 auto 0 auto;
+  }
+  #main, #header, #masthead, .info {
+    width: 100%;
+  }
+  #header {
+  	height: 90px;
+  	border-bottom: solid 1px #d9d9d9;
+  	margin-top: 80px;
+  }
+  #branding {
+  	text-align: center;
+  }
+  .menu {
+  	top: 20px;
+	text-align: center;
+	float: none;
+	margin-left: 0;
+	position: relative;
+  }
+  .menu li {
+  	display: inline;
+  	list-style: none;
+  	padding-left: 10px;
+  }
+  .menu li:first-child {
+  	margin-left: 0;
+  }
+  .menu li:last-child {
+  	margin: 0;
+  }
+  .info {
+	margin: 20px 0 80px 0;
+  }
+ .info li {
+ 	width: 100%;
+ 	text-align: center;
+ 	display: inline-block;
+ 	margin-left: 0;
+ }
+/*}*/

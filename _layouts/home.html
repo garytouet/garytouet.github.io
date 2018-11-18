@@ -1,0 +1,47 @@
+---
+---
+{% include header.html %}
+
+{% for post in paginator.posts %}
+
+<article class="post">
+
+  {% if post.link %}
+    <h2 class="link-post_title"><a href="{{ post.link }}" alt="{{ post.title }}">
+    {{ post.title }}&nbsp;&#8594;</a></h2>
+  {% else %}
+    <span class="post-date">{{ post.date | date: site.date_format }}</span>
+    <h2 class="standard-post_title"><a href="{{ post.url }}" alt="{{ post.title }}">
+    {{ post.title }}</a></h2>
+  {% endif %}
+
+  <div class="post_content">
+
+    {{ post.content }}
+
+  </div>
+
+  <a class="spade" href="{{ post.url }}" alt="{{ page.title }}">&#9824;</a>
+
+</article>
+
+{% endfor %}
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<div id="pagination">
+  {% if paginator.previous_page %}
+    <span class="previous"><a href="{{ paginator.previous_page_path }}" class="previous">
+      &larr; Newer Entries</a></span>
+  {% else %}
+    <span class="previous"></span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="next"><a href="{{ paginator.next_page_path }}">Previous Entries &rarr;</a></span>
+  {% else %}
+    <span class="next"></span>
+  {% endif %}
+</div>
+{% endif %}
+
+{% include footer.html %}
