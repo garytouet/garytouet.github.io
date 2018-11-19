@@ -173,9 +173,11 @@ box-shadow: #0063dc 0 0 3px;
  margin: 10px 0 0 -10px;
  padding-bottom: 10px;
  list-style: none;
+ display: inline-block;
+ width: 100%;
 }
 .archive_permalink {
- width: 380px;
+ width: 84%;
  display: inline-block;
 
 }
