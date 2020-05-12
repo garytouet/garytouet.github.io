@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Historic day
+categories:
+  - Articles
+  - Personal
 ---
 
 It is mostly a historic day because France (where I'm from) has, after 55 days of lockdown due to the Covid-19 pandemic, eased the restrictions today. [France is among other countries to have done so](https://www.bbc.com/news/world-europe-52615733).
