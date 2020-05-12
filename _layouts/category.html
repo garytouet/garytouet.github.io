@@ -6,8 +6,8 @@ layout: page
 
 <ul>
 {% for post in site.categories[page.category] %}
- <li>
-  <a href="{{ post.url }}" title="Permanent Link to {{ post.title }}">{{ post.title }}</a>
-  <span class="archive_entry-date">{{ post.date | date: site.date_format }}</span>
+ <li class="archive_item">
+  <a class="archive_permalink" href="{{ post.url }}" title="Permanent Link to {{ post.title }}">{{ post.title }}</a>
+  <span class="archive_post-date">{{ post.date | date: site.date_format }}</span>
  </li>{% endfor %}
 </ul>
