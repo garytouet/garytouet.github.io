@@ -10,10 +10,11 @@
 
 body {
   background: #fff;
-  line-height: 21px;
+  /* line-height: 21px; */
 }
 input, textarea {
-	font: 11px Georgia, Times New Roman, Times, serif;
+	font: 0.86rem Georgia, Times New Roman, Times, serif;
+  /* font: 11px Georgia, Times New Roman, Times, serif; */
 	line-height: 1.5;
 }
 
@@ -27,8 +28,9 @@ h1,h2,h3,h4,h5,h6 {
 hr {
   background-color: #999;
   border:0;
-  height: 1px;
-	margin-bottom: 1.5em;
+  height: 0.08rem;
+	margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5em; */
 }
 
 
@@ -36,13 +38,16 @@ hr {
 -------------------------------------------------------------- */
 
 p {
-	margin-bottom: 15px;
+	margin-bottom: 1.17rem;
+  /* margin-bottom: 15px; */
 }
 ul {
-	margin: 0 0 10px 10px;
+	margin: 0 0 0.78rem 0.78rem;
+  /* margin: 0 0 10px 10px; */
 }
 ol {
-	margin: 0 0 10px 10px;
+	margin: 0 0 0.78rem 0.78rem;
+  /* margin: 0 0 10px 10px; */
 }
 ul {
 	list-style: circle;
@@ -63,13 +68,15 @@ ul ul, ol ol, ul ol, ol ul {
 	margin-bottom:0;
 }
 dl	{
-	margin:0 1.5em;
+	margin:0 1.5rem;
+  /* margin:0 1.5em; */
 }
 dt {
 	font-weight: bold;
 }
 dd {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5em; */
 }
 strong {
 	font-weight: bold;
@@ -78,20 +85,26 @@ cite, em, i {
 	font-style: italic;
 }
 blockquote {
-	margin: 0 10px 15px;
-	border-left: solid 2px #d9d9d9;
+	margin: 0 0.78rem 1rem;
+  /* margin: 0 10px 15px; */
+	border-left: solid 0.16rem #d9d9d9;
+  /* border-left: solid 2px #d9d9d9; */
 	color: #505050;
 }
 blockquote em, blockquote i, blockquote cite {
 	font-style: normal;
 }
 pre {
-	font: 11px Monaco, monospace;
+	font: 0.8rem Monaco, monospace;
+  /* font: 11px Monaco, monospace; */
 	line-height: 1.5;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5r
+  /* margin-bottom: 1.5rem; */
+  /* margin-bottom: 1.5em; */
 }
 code {
-	font: 11px Monaco, monospace;
+	font: 0.86rem Monaco, monospace;
+  /* font: 11px Monaco, monospace; */
 }
 /*abbr, acronym {
   border-bottom: 1px dotted #666;
